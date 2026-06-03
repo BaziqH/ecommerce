@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductImageTVuCell" rowHeight="290" id="KGk-i7-Jjw" customClass="ProductPageTVuImageCell" customModule="ecommerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="290"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="290"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAd-2H-dcn">
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="191.33333333333334"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EnR-hJ-sMc">
+                        <rect key="frame" x="0.0" y="199.33333333333334" width="345" height="90.666666666666657"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v24-tn-fkD">
+                                <rect key="frame" x="0.0" y="0.0" width="168.66666666666666" height="90.666666666666671"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zhj-5F-CTf">
+                                <rect key="frame" x="176.66666666666663" y="0.0" width="168.33333333333337" height="90.666666666666671"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MAd-2H-dcn" secondAttribute="trailing" id="7VH-rW-rCs"/>
+                    <constraint firstItem="EnR-hJ-sMc" firstAttribute="top" secondItem="MAd-2H-dcn" secondAttribute="bottom" constant="8" id="G33-sh-Biv"/>
+                    <constraint firstItem="EnR-hJ-sMc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WwZ-DY-g5q"/>
+                    <constraint firstAttribute="bottom" secondItem="EnR-hJ-sMc" secondAttribute="bottom" id="lKZ-YN-hjd"/>
+                    <constraint firstItem="MAd-2H-dcn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lXE-eD-swc"/>
+                    <constraint firstItem="MAd-2H-dcn" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.66" id="mWv-lg-m9Y"/>
+                    <constraint firstAttribute="trailing" secondItem="EnR-hJ-sMc" secondAttribute="trailing" id="mwX-qw-ewP"/>
+                    <constraint firstItem="MAd-2H-dcn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qdx-9L-TXR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="mainImage" destination="MAd-2H-dcn" id="8QI-jo-5hu"/>
+                <outlet property="secondImage" destination="v24-tn-fkD" id="r6A-v7-0qg"/>
+                <outlet property="thirdImage" destination="Zhj-5F-CTf" id="4C1-El-JY2"/>
+            </connections>
+            <point key="canvasLocation" x="3.8167938931297707" y="74.647887323943664"/>
+        </tableViewCell>
+    </objects>
+</document>

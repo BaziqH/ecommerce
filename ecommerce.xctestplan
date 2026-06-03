@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "8D8CC91A-D18D-4D4A-B49C-688955C41CBE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "commandLineArgumentEntries" : [
+
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ecommerce.xcodeproj",
+      "identifier" : "008593A32F7B9B600098FF1A",
+      "name" : "ecommerce"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ecommerce.xcodeproj",
+        "identifier" : "00A30B602F8CFEF800FDB611",
+        "name" : "ecommerceUITests"
+      }
+    },
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:ecommerce.xcodeproj",
+        "identifier" : "00A30B742F8CFF2300FDB611",
+        "name" : "ecommerceTests"
+      }
+    }
+  ],
+  "version" : 1
+}
